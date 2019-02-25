@@ -7,7 +7,7 @@
  #include <geometry_msgs/PoseStamped.h>
  // #include <boost/bind.hpp>
 
-void imuCb(const sensor_msgs::ImuConstPtr& imu_msg){
+void imuCb(const sensor_msgs::Imu::ConstPtr& imu_msg){
 
   ROS_INFO_STREAM("data x: " << imu_msg->linear_acceleration.x);
   ROS_INFO_STREAM("data y: " << imu_msg->linear_acceleration.y);
